@@ -1,0 +1,208 @@
+#navBar{
+    background-color: #353A40 !important;
+    color: #ffffff;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+#img{
+    width: 100px;
+    height: 60px;
+}
+
+#conferencia{
+    color: #ffffff !important;
+}
+
+.navbar-brand{
+    color: #ffffff !important;
+}
+
+.nav-link{
+    color: #9C9DA2 !important;
+}
+
+#ticket{
+    color: #25A946 !important;
+}
+
+.container{
+    margin-top: 20px !important;
+    margin-bottom: 50px;
+}
+
+.img-fluid{
+    filter: brightness(50%);
+
+}
+
+.card-img-top{
+    border-radius: 0 !important;
+}
+
+.cards{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card{
+    width: 18rem;
+    margin: 10px;
+    border-radius: 0 !important;
+}
+
+.card-body{
+    display: block;
+    text-align: left;
+}
+
+.card-bottom{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-booton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.javascript{
+    background-color: #FEC106;
+    padding: 0.001rem 0.3rem;
+    border-radius: 0.3rem;
+    text-align: center;
+}
+
+.react{
+    background-color: #17A2B9;
+    color: #ffffff;
+    padding: 0.001rem 0.3rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.negocios{
+    background-color: #6C757E;
+    color: #ffffff;
+    padding: 0.001rem 0.3rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.startups{
+    background-color: #DD3546;
+    color: #ffffff;
+    padding: 0.001rem 0.3rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.card-text{
+    font-size: 0.8rem;
+}
+
+span{
+    font-size: 0.8rem;
+}
+
+.order-1{
+    background-color: #353A40;
+    color: #ffffff;
+}
+
+#col2{
+    background-color: #353A40;
+    color: #ffffff;
+}
+
+.col{
+    margin: -6px !important;
+}
+
+.row{
+    margin: none !important;
+}
+
+.container-form{
+    width: 60%;
+    height: auto;
+    
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.text-container{
+    padding: 20px;
+}
+
+
+.texto_span{
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+.button{
+    background-color: #353A40;
+    color: #ffffff;
+    border: solid 1px #ffffff;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+
+
+.titulo_conviertete{
+    margin-bottom: 40px;
+}
+
+.text-puntilla{
+    text-decoration:none;
+    border-bottom:2px dotted #070707;
+}
+
+
+.izquierda{
+    text-align: left;
+}
+
+.btn-success{
+    background-color: #96C93E !important;
+    border: none !important;
+    width: 100%;
+}
+
+.anotate{
+    display: inline-flex;
+
+}
+
+#form-control{
+    margin-top:  20px;
+    width: 100%;
+}
+
+
+.page-footer{
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to right, #1C3643, #1E5372);
+}
+
+.nav-link{
+    color: #ffffff !important;
+}
+
+#footer{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
