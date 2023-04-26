@@ -38,8 +38,52 @@
 
 }
 
+.container-img{
+    position: relative;
+    margin-top: -11%;
+}
+
+.d-block{
+    filter: brightness(50%) !important;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 45%;
+    right: -180px;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    padding: 20px;
+    width: 550px;
+    height: 100px;
+    text-align: right;
+}
+
+.carousel-item img {
+    clip-path: inset(18% 0 8% 0);
+    }
+
 .card-img-top{
     border-radius: 0 !important;
+}
+
+.quiero{
+    background-color: transparent;
+    color: #ffffff;
+    border: solid 1px #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 7px;
+    margin-right: 10px;
+}
+
+.comprar{
+    background-color: #25A946;
+    color: #ffffff;
+    border: solid 1px #25A946;
+    border-radius: 5px;
+    text-align: center;
+    padding: 7px;
 }
 
 .cards{
@@ -73,7 +117,8 @@
 }
 .javascript{
     background-color: #FEC106;
-    padding: 0.001rem 0.3rem;
+    padding: 1px 6px;
+    font-weight: bold;
     border-radius: 0.3rem;
     text-align: center;
 }
@@ -81,7 +126,8 @@
 .react{
     background-color: #17A2B9;
     color: #ffffff;
-    padding: 0.001rem 0.3rem;
+    padding: 1px 6px;
+    font-weight: bold;
     border-radius: 0.3rem;
     text-align: center;
     margin-left: 5px;
@@ -90,7 +136,8 @@
 .negocios{
     background-color: #6C757E;
     color: #ffffff;
-    padding: 0.001rem 0.3rem;
+    padding: 1px 6px;
+    font-weight: bold;
     border-radius: 0.3rem;
     text-align: center;
     margin-left: 5px;
@@ -99,7 +146,8 @@
 .startups{
     background-color: #DD3546;
     color: #ffffff;
-    padding: 0.001rem 0.3rem;
+    padding: 1px 6px;
+    font-weight: bold;
     border-radius: 0.3rem;
     text-align: center;
     margin-left: 5px;
