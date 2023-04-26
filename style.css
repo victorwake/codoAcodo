@@ -1,11 +1,21 @@
+
+/* Inicio navBar */
 #navBar{
     background-color: #353A40 !important;
     color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
     padding-right: 100px;
     padding-left: 100px;
-    margin-bottom: 0px;
     border-radius: 0px;
 }
+
+.container-fluid{
+    padding-bottom: 20px;
+} 
 
 #img{
     width: 100px;
@@ -28,19 +38,12 @@
     color: #25A946 !important;
 }
 
-.container{
-    margin-top: 20px !important;
-    margin-bottom: 50px;
-}
-
-.img-fluid{
-    filter: brightness(50%);
-
-}
-
+/* Fin navBar */
+/* ---------------------------------------------------------------------------------- */
+/* Inicio carrusel */
 .container-img{
     position: relative;
-    margin-top: -11%;
+    margin-top: -65px !important;
 }
 
 .d-block{
@@ -60,12 +63,16 @@
 }
 
 .carousel-item img {
-    clip-path: inset(18% 0 8% 0);
+    clip-path: inset(5% 0 7% 0);
     }
 
-.card-img-top{
-    border-radius: 0 !important;
+.carousel-control-next{
+    margin-right: -4% !important;
 }
+    
+.carousel-control-prev{
+    margin-left: -4% !important;
+}    
 
 .quiero{
     background-color: transparent;
@@ -86,6 +93,17 @@
     padding: 7px;
 }
 
+/* Fin carrusel */
+/* ---------------------------------------------------------------------------------- */
+/* Inicio cards */
+.card-img-top{
+    border-radius: 5px 5px 0 0 !important;
+}
+
+#oradores{
+    margin-top: -3% !important;
+}
+
 .cards{
     display: inline-flex;
     align-items: center;
@@ -96,7 +114,7 @@
 .card{
     width: 18rem;
     margin: 10px;
-    border-radius: 0 !important;
+    border-radius: 5px 5px 0 0 !important;
 }
 
 .card-body{
@@ -157,13 +175,11 @@
     font-size: 0.8rem;
 }
 
-span{
-    font-size: 0.8rem;
-}
-
-.order-1{
-    background-color: #353A40;
-    color: #ffffff;
+/* Fin cards */
+/* ---------------------------------------------------------------------------------- */
+/* Inicio lugar */
+.text-container{
+    padding: 20px;
 }
 
 #col2{
@@ -179,20 +195,6 @@ span{
     margin: none !important;
 }
 
-.container-form{
-    width: 60%;
-    height: auto;
-    
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.text-container{
-    padding: 20px;
-}
-
-
 .texto_span{
     font-size: 0.9rem;
     color: #ffffff;
@@ -207,6 +209,16 @@ span{
 }
 
 
+/* Fin lugar */
+/* ---------------------------------------------------------------------------------- */
+/* Inicio formulario */
+.container-form{
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 .titulo_conviertete{
     margin-bottom: 40px;
@@ -216,7 +228,6 @@ span{
     text-decoration:none;
     border-bottom:2px dotted #070707;
 }
-
 
 .izquierda{
     text-align: left;
@@ -238,7 +249,9 @@ span{
     width: 100%;
 }
 
-
+/* Fin formulario */
+/* ---------------------------------------------------------------------------------- */
+/* Inicio footer */
 .page-footer{
     height: 100px;
     width: 100%;
@@ -253,4 +266,131 @@ span{
     display: inline;
     align-items: center;
     justify-content: center;
+}
+
+.container{
+    margin-top: 20px !important;
+    margin-bottom: 50px;
+}
+
+/* Fin footer */
+/* ---------------------------------------------------------------------------------- */
+
+span{
+    font-size: 0.8rem;
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+/* Media Queries */
+
+
+@media (max-width: 768px){
+    .container-img{
+        margin-top: 10% !important;
+    }
+
+    .text-overlay {
+        padding-left: 20%;
+        top: 25%;
+        color: #ffffff;
+        width: 550px;
+        height: 100px;
+        text-align: left;
+        padding-bottom: 15%;
+    }
+
+    .carousel-item img {
+        clip-path: inset(5% 0 7% 0);
+        }
+
+    .carousel-control-next{
+        margin-right: -4% !important;
+    }
+        
+    .carousel-control-prev{
+        margin-left: -4% !important;
+    }    
+
+    .quiero{
+        background-color: transparent;
+        color: #ffffff;
+        border: solid 1px #ffffff;
+        border-radius: 5px;
+        text-align: center;
+        padding: 7px;
+        margin-right: 10px;
+    }
+
+    .comprar{
+        background-color: #25A946;
+        color: #ffffff;
+        border: solid 1px #25A946;
+        border-radius: 5px;
+        text-align: center;
+        padding: 7px;
+    }
+
+    .card-img-top{
+        border-radius: 5px 5px 0 0 !important;
+    }
+
+
+    .cards{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 50%;
+        margin-right: 50%;
+        
+    
+    }
+
+    .card{
+        width: 18rem;
+        margin: 10px;
+        border-radius: 5px 5px 0 0 !important;
+    }
+
+    .card-body{
+        display: block;
+        text-align: left;
+    }
+
+    .card-bottom{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-booton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .row {
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .col {
+        position: relative;
+        margin: 0 !important;
+        width: 100%;
+        margin-top: 150px;
+      }
+      
+      #col2 {
+        position: absolute;
+        padding-top: -150px;
+      }
+
+      .card-img-top{
+        margin-top: 230px !important;
+      
+   
+
+
 }
