@@ -180,6 +180,7 @@
 /* Inicio lugar */
 .text-container{
     padding: 20px;
+    width: 100% !important;
 }
 
 #col2{
@@ -268,7 +269,7 @@
     justify-content: center;
 }
 
-.container{
+.container-footer{
     margin-top: 20px !important;
     margin-bottom: 50px;
 }
@@ -287,17 +288,20 @@ span{
 
 @media (max-width: 768px){
     .container-img{
-        margin-top: 10% !important;
+        margin-top: 16% !important;
     }
 
     .text-overlay {
-        padding-left: 20%;
-        top: 25%;
+        position: absolute;
+        top: 17%;
+        right: -230px;
+        transform: translate(-50%, -50%);
         color: #ffffff;
-        width: 550px;
+        padding: 20px;
+        width: 500px;
         height: 100px;
-        text-align: left;
-        padding-bottom: 15%;
+        text-align: right;
+        font-size: 0.9em;
     }
 
     .carousel-item img {
@@ -340,15 +344,16 @@ span{
         display: grid;
         align-items: center;
         justify-content: center;
-        grid-template-columns: repeat(1, 1fr);
-        margin-left: 50%;
-        margin-right: 50%;
+        /* grid-template-columns: repeat(1, 1fr); */
+        /* margin-left: 50%;
+        margin-right: 50%; */
         
     
     }
 
     .card{
         width: 18rem;
+        height: auto !important;
         margin: 10px;
         border-radius: 5px 5px 0 0 !important;
     }
@@ -384,13 +389,47 @@ span{
       
       #col2 {
         position: absolute;
-        padding-top: -150px;
+        padding-top: -180px;
       }
 
       .card-img-top{
-        margin-top: 230px !important;
-      
+        margin-top: 275px !important;
+      }
+
+      .page-footer{
+        bottom: 0 !important;
+        display: flex;
+        align-items: right;
+        font-size: 0.6rem;
+        /* margin-top: 80px !important; */
+
+    }
    
 
 
 }
+
+@media (max-width: 480px){
+    .container-img{
+        margin-top: 47% !important;
+    }
+
+    .text-overlay {
+        position: absolute;
+        top: 55%;
+        right: -140px;
+        transform: translate(-50%, -50%);
+        color: #ffffff;
+        padding: 10px;
+        width: 300px;
+        height: 200px;
+        text-align: right;
+        font-size: 0.6em;
+    }
+
+    .card-img-top{
+        margin-top: 390px !important;
+      }
+
+}
+
