@@ -8,8 +8,8 @@
     left: 0;
     z-index: 999;
     width: 100%;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 10%;
+    padding-left: 10%;
     border-radius: 0px;
 }
 
@@ -38,46 +38,32 @@
     color: #25A946 !important;
 }
 
+.navbar-toggler{
+    border-color: #000000 !important;
+}
+
 /* Fin navBar */
 /* ---------------------------------------------------------------------------------- */
 /* Inicio carrusel */
-.container-img{
-    position: relative;
-    margin-top: -65px !important;
+
+#carouselExampleAutoplaying{
+    margin-top: 70px;
+    margin-bottom: 10px;
 }
 
 .d-block{
     filter: brightness(50%) !important;
 }
 
-.text-overlay {
-    position: absolute;
-    top: 45%;
-    right: -180px;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    padding: 20px;
-    width: 550px;
-    height: 100px;
-    text-align: right;
+.text-overlay{
+    margin-left: 5%;
+    margin-right: 5%;
 }
-
-.carousel-item img {
-    clip-path: inset(5% 0 7% 0);
-    }
-
-.carousel-control-next{
-    margin-right: -4% !important;
-}
-    
-.carousel-control-prev{
-    margin-left: -4% !important;
-}    
 
 .quiero{
     background-color: transparent;
-    color: #ffffff;
-    border: solid 1px #ffffff;
+    color: #888686;
+    border: solid 1px #777777;
     border-radius: 5px;
     text-align: center;
     padding: 7px;
@@ -92,25 +78,16 @@
     text-align: center;
     padding: 7px;
 }
-
 /* Fin carrusel */
 /* ---------------------------------------------------------------------------------- */
-/* Inicio cards */
-.card-img-top{
-    border-radius: 5px 5px 0 0 !important;
-}
-
-#oradores{
-    margin-top: -3% !important;
-}
-
+/* Inicio oradores */
 .cards{
-    display: inline-flex;
-    align-items: center;
+    display: flex;
     justify-content: center;
-
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
 }
-
 .card{
     width: 18rem;
     margin: 10px;
@@ -174,64 +151,64 @@
 .card-text{
     font-size: 0.8rem;
 }
-
-/* Fin cards */
+/* Fin oradores */
 /* ---------------------------------------------------------------------------------- */
 /* Inicio lugar */
-.text-container{
-    padding: 20px;
-    width: 100% !important;
-}
 
 #col2{
     background-color: #353A40;
     color: #ffffff;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    
 }
 
-.col{
-    margin: -6px !important;
-}
-
-.row{
-    margin: none !important;
+.octubre{
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .texto_span{
-    font-size: 0.9rem;
-    color: #ffffff;
+    font-size: 0.7rem;
 }
 
 .button{
     background-color: #353A40;
     color: #ffffff;
     border: solid 1px #ffffff;
+    font-size: 0.8rem;
     border-radius: 5px;
-    margin-left: 20px;
+    margin-top: 1%;
+    margin-left: 5%;
+    
 }
 
+.col-md-6{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.text-container{
+    padding-left: 5%;
+    padding-right: 5%;
+}
 
 /* Fin lugar */
 /* ---------------------------------------------------------------------------------- */
 /* Inicio formulario */
+
 .container-form{
-    width: 60%;
+    width: 90%;
     height: auto;
     margin: 0 auto;
-    margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.titulo_conviertete{
-    margin-bottom: 40px;
-}
-
-.text-puntilla{
-    text-decoration:none;
-    border-bottom:2px dotted #070707;
-}
-
 .izquierda{
-    text-align: left;
+    text-align: center;
+    font-size: 0.9rem;
 }
 
 .btn-success{
@@ -242,194 +219,134 @@
 
 .anotate{
     display: inline-flex;
+    font-size: 0.9rem;
 
 }
 
 #form-control{
-    margin-top:  20px;
+    margin-top:  5px !important;
     width: 100%;
 }
 
 /* Fin formulario */
-/* ---------------------------------------------------------------------------------- */
+/*---------------------------------------------------------------------------------- */
 /* Inicio footer */
 .page-footer{
-    height: 100px;
+    bottom: 0;
     width: 100%;
     background: linear-gradient(to right, #1C3643, #1E5372);
 }
 
 .nav-link{
     color: #ffffff !important;
+    font-size: 0.8rem !important;
 }
 
 #footer{
-    display: inline;
-    align-items: center;
+    display: flex;
     justify-content: center;
-}
-
-.container-footer{
-    margin-top: 20px !important;
-    margin-bottom: 50px;
+    align-items: center;
 }
 
 /* Fin footer */
-/* ---------------------------------------------------------------------------------- */
+/*---------------------------------------------------------------------------------- */
+/*Medias Queries*/
 
-span{
-    font-size: 0.8rem;
+@media (max-width: 480px){
+    #navBar{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
 }
 
+/*---------------------------------------------------------------------------------- */
 
-/* ---------------------------------------------------------------------------------- */
-/* Media Queries */
-
-
-@media (max-width: 768px){
+@media (min-width: 890px){
+    /* Inicio carrusel */
     .container-img{
-        margin-top: 16% !important;
+        position: relative;
+        margin-top: -65px !important;
     }
 
     .text-overlay {
         position: absolute;
-        top: 17%;
-        right: -230px;
+        top: 45%;
+        right: -180px;
         transform: translate(-50%, -50%);
         color: #ffffff;
         padding: 20px;
-        width: 500px;
+        width: 550px;
         height: 100px;
         text-align: right;
-        font-size: 0.9em;
     }
-
-    .carousel-item img {
-        clip-path: inset(5% 0 7% 0);
-        }
-
-    .carousel-control-next{
-        margin-right: -4% !important;
-    }
-        
-    .carousel-control-prev{
-        margin-left: -4% !important;
-    }    
 
     .quiero{
-        background-color: transparent;
         color: #ffffff;
         border: solid 1px #ffffff;
-        border-radius: 5px;
-        text-align: center;
-        padding: 7px;
-        margin-right: 10px;
     }
-
-    .comprar{
-        background-color: #25A946;
-        color: #ffffff;
-        border: solid 1px #25A946;
-        border-radius: 5px;
-        text-align: center;
-        padding: 7px;
+    /* Fin carrusel */
+    /*---------------------------------------------------------------------------------- */
+    /*Inicio oradores */
+    hr{
+        display: none;
     }
-
-    .card-img-top{
-        border-radius: 5px 5px 0 0 !important;
-    }
-
 
     .cards{
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        /* grid-template-columns: repeat(1, 1fr); */
-        /* margin-left: 50%;
-        margin-right: 50%; */
-        
-    
-    }
-
-    .card{
-        width: 18rem;
-        height: auto !important;
-        margin: 10px;
-        border-radius: 5px 5px 0 0 !important;
-    }
-
-    .card-body{
-        display: block;
-        text-align: left;
-    }
-
-    .card-bottom{
         display: inline-flex;
         align-items: center;
         justify-content: center;
     }
+    /*Fin oradores */
+    /*---------------------------------------------------------------------------------- */
+    /* Inicio lugar */
 
-    .container-booton{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .imagen-lugar{
+        width: 100% !important;
+        height: 100%;
+    }
+
+    .octubre{
+        font-size: 1.5rem;
     }
     
-    .row {
-        display: flex;
-        flex-direction: row;
-      }
-      
-      .col {
-        position: relative;
-        margin: 0 !important;
-        width: 100%;
-        margin-top: 150px;
-      }
-      
-      #col2 {
-        position: absolute;
-        padding-top: -180px;
-      }
-
-      .card-img-top{
-        margin-top: 275px !important;
-      }
-
-      .page-footer{
-        bottom: 0 !important;
-        display: flex;
-        align-items: right;
-        font-size: 0.6rem;
-        /* margin-top: 80px !important; */
-
+    .texto_span{
+        font-size: 1rem;
     }
-   
-
-
-}
-
-@media (max-width: 480px){
-    .container-img{
-        margin-top: 47% !important;
+    
+    .button{
+        font-size: 1rem;
+        border-radius: 5px;
+        margin-top: 1%;
+        margin-left: 5%;
+        
+    }
+    /* Fin lugar */
+    /*---------------------------------------------------------------------------------- */
+    /* Inicio formulario */
+    .text-puntilla{
+        text-decoration:none;
+        border-bottom:2px dotted #070707;
     }
 
-    .text-overlay {
-        position: absolute;
-        top: 55%;
-        right: -140px;
-        transform: translate(-50%, -50%);
-        color: #ffffff;
-        padding: 10px;
-        width: 300px;
-        height: 200px;
-        text-align: right;
-        font-size: 0.6em;
+    .container-form{
+        width: 60%;
     }
 
-    .card-img-top{
-        margin-top: 390px !important;
-      }
+    .izquierda{
+        text-align: left;
+        color: #868686;
+    }
+    /* Fin formulario */
+     /*---------------------------------------------------------------------------------- */
+    /*Inicio Footer*/
+    .nav-link{
+        font-size: 1rem !important;
+    }
 
+    .nav{
+        padding: 20px;
+    }
+    
+    /*Fin Footer*/
 }
 
