@@ -298,6 +298,12 @@
         align-items: center;
         justify-content: center;
     }
+    
+    .card:hover{
+        box-shadow: -3px -2px 8px rgb(51, 27, 27), 3px 2px 8px rgba(97, 0, 0, 0.267);
+        cursor: pointer;
+    }
+    
     /*Fin oradores */
     /*---------------------------------------------------------------------------------- */
     /* Inicio lugar */
