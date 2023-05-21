@@ -45,7 +45,7 @@
             <a class="nav-link" href="#oradores">Los oradores</a>
             <a class="nav-link" href="#lugar">El lugar y la fecha</a>
             <a class="nav-link" href="#conviertete">Conviértete en orador</a>
-            <a id="ticket" class="nav-link disabled">Comprar tickets</a>
+            <a id="ticket-nav" class="nav-link " href="#ticket">Comprar tickets</a>
           </div>
         </div>
       </div>
@@ -67,14 +67,14 @@
             <img src="./img/ba3.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
-        </button>
+        </button> -->
       </div>
 
       <div class="text-overlay">
@@ -85,7 +85,8 @@
           evento, a otros estudiantes de Codo a Codo y los oradores de primer
           nivel que tenemos para ti. Te esperamos!
         </p>
-        <button class="quiero">Quiero ser orador</button><button class="comprar">Comprar tickets</button>
+        <button class="quiero">Quiero ser orador</button>
+        <a href="#ticket"><button class="comprar">Comprar tickets</button></a>
       </div>
     </div>
     <!-- /* Fin carrusel */ -->
@@ -221,6 +222,97 @@
     </div>
     <!-- /* Fin formulario */ -->
 
+        <!-- /* Inicio Ticket */ -->
+        <div class="container text-center" id="ticket">
+          <div>
+            <div class="cards">
+              <div class="card-tickets" id="cardticket1" >
+                <div class="card-body-ticket">
+                  <h4 class="card-title-ticket">Estudiantes</h4>
+                  <span class="card-text-ticket">
+                    Tiene un descuento
+                  </span>
+                  <p class="card-ticket-descuento">
+                    80%
+                  </p>
+                  <p class="documentacion">*Presentar documentación</p>
+                </div>
+              </div>
+              <div class="card-tickets" id="cardticket2">
+                <div class="card-body-ticket">
+                  <h4 class="card-title-ticket">Trainee</h4>
+                  <span class="card-text-ticket">
+                    Tiene un descuento
+                  </span>
+                  <p class="card-ticket-descuento">
+                    50%
+                  </p>
+                  <p class="documentacion">*Presentar documentación</p>
+                </div>
+              </div>
+              <div class="card-tickets" id="cardticket3">
+                <div class="card-body-ticket">
+                  <h4 class="card-title-ticket">Junior</h4>
+                  <span class="card-text-ticket">
+                    Tiene un descuento
+                  </span>
+                  <p class="card-ticket-descuento">
+                    15%
+                  </p>
+                  <p class="documentacion">*Presentar documentación</p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="titulo-valor-ticket">
+            <span>VENTA </span>
+              <h2>VALOR DE TICKET $200</h2>
+            </div>
+          <div class="container form-ticket">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <input type="text"  class="form-control" id="inputNombre" placeholder="Nombre">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
+            </div>
+            <div class="col-12">
+              <input type="email"  class="form-control" id="inputAddress" placeholder="Correo">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCantidad" id="label-cantidad" class="form-label">Cantidad</label>
+              <input type="text" class="form-control" id="inputCantidad">
+            </div>
+            <div class="col-md-4">
+              <label for="inputCategoria" id="label-cantidad" class="form-label">Categoria</label>
+              <select id="inputCategoria" class="form-select">
+                <option selected>Opciones...</option>
+                <option>
+                  Estudiante
+                </option>
+                <option>
+                  Trainee
+                </option>
+                <option>
+                  Junior
+                </option>
+              </select>
+
+            </div>
+            <div class="col-12">
+              <div class="cointainer-pagar"><span id="totalAPagar" class="pagar">Total a Pagar: $</span></div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary" id="boton-borrar">Borrar</button>
+              <button type="submit" class="btn btn-primary" id="boton-resumen">Resument</button>
+            </div>
+          </form>
+          </div>
+        </div>
+        <!-- /* Fin Ticket */ -->
+
     <!-- /* Inicio footer */ -->
     <footer class="page-footer">
       <div class="container-footer">
@@ -259,6 +351,6 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
-    ></script>
+    ></script><script src="script.js"></script>
   </body>
 </html>

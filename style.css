@@ -35,7 +35,7 @@
     color: #9C9DA2 !important;
 }
 
-#ticket{
+#ticket-nav{
     color: #25A946 !important;
 }
 
@@ -232,6 +232,117 @@
 
 /* Fin formulario */
 /*---------------------------------------------------------------------------------- */
+/* Inicio ticket */
+
+.form-ticket{
+    width: 400px !important;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.card-tickets{
+    width: 12rem;
+    height: 11rem;
+    margin: 3px;
+}
+
+
+#cardticket1{
+    border: 1px solid #007BFF
+}
+
+#cardticket2{
+    border: 1px solid #17A2B8
+}
+
+#cardticket3{
+    border: 1px solid #FFC107
+}
+
+.card-body-ticket{
+    display: block;
+    text-align: center;
+    padding-top: 21px;
+}
+
+#inputNombre{
+    width: 95%;
+}
+
+#inputApellido{
+    width: 95%;
+}
+
+#inputAddress{
+    margin-left: -8px !important;
+
+}
+
+#inputCategoria{
+    width: 380px !important;
+}
+
+#label-cantidad{
+    float: left;
+}
+
+.card-ticket-descuento{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.documentacion{
+    font-size: 0.8rem;
+    color: #868686;
+}
+
+.cointainer-pagar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.titulo-valor-ticket{
+    margin-bottom: 20px;
+    margin-top: -40px;
+}
+
+
+.pagar{
+    background-color: #CCE5FF;
+    color: #000000;
+    border: solid 1px #B8DAFF;
+    border-radius: 5px;
+    text-align: left;
+    padding: 7px;
+    margin-right: 10px;
+    width: 580px;
+}
+
+#boton-borrar{
+    background-color: #97C93E;
+    border-color: #97C93E;
+    width: 285px;
+    margin: 3px;
+    margin-bottom: 17px;
+}
+
+#boton-resumen{
+    background-color: #97C93E;
+    border-color: #97C93E;
+    width: 285px;
+    margin: 3px;
+    margin-bottom: 17px;
+}
+
+/* Fin ticket */
+/*---------------------------------------------------------------------------------- */
 /* Inicio footer */
 .page-footer{
     bottom: 0;
@@ -345,6 +456,41 @@
     }
     /* Fin formulario */
      /*---------------------------------------------------------------------------------- */
+     /*Inicio ticket */
+    hr{
+        display: none;
+    }
+
+    .cards{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-ticket{
+        width: 620px !important;
+    }
+
+    #inputCategoria{
+        width: 280px !important;
+    }
+
+    #cardticket1:hover{
+        border-color: #007BFF;
+        box-shadow: inset 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    
+    #cardticket2:hover{
+        border-color: #17A2B8;
+        box-shadow: inset 0 0 0 0.2rem rgba(23, 162, 184, 0.25);
+    }
+    
+    #cardticket3:hover{
+        border-color: #FFC107;
+        box-shadow: inset 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+    }
+    /*Fin ticket */
+    /*---------------------------------------------------------------------------------- */
     /*Inicio Footer*/
     .nav-link{
         font-size: 1rem !important;
