@@ -43,8 +43,8 @@ document.getElementById('boton-resumen').addEventListener('click', function(even
     event.preventDefault(); // Evita el envío del formulario
   
     // Limpiar los campos del formulario
-    document.getElementById('inputEmail4').value = '';
-    document.getElementById('inputPassword4').value = '';
+    document.getElementById('inputNombre').value = '';
+    document.getElementById('inputApellido').value = '';
     document.getElementById('inputAddress').value = '';
     document.getElementById('inputCantidad').value = '';
     document.getElementById('inputCategoria').selectedIndex = 0;
